@@ -56,3 +56,35 @@ nav div .button{
     border: none;
    
 }
+
+main{
+    padding-left: 25vw;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqua;
+    height: 70vh;
+}
+
+.H1{
+    
+    width: 15vw;
+
+}
+
+.H1 h1{
+    color: rgb(21, 21, 102);
+}
+
+.content div p{
+    width: 35vw;
+    color: gray;
+}
+
+.button2{
+    display: flex;
+    
+}
+
