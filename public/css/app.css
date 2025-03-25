@@ -12,7 +12,6 @@ nav {
     justify-content: space-between;
     padding: 20px 200px;
     background-color: transparent;
-    border-bottom: 1px solid gray;
 }
 
 .text {
@@ -58,7 +57,7 @@ nav {
 
 /***********section-1  ***********/
 .content {
-    padding: 33px;
+    padding: 20px 200px;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -71,7 +70,7 @@ nav {
 }
 
 .description h1 {
-    font-size: 80px;
+    font-size: 60px;
     color: rgb(17, 17, 58);
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -89,19 +88,22 @@ nav {
 }
 .more{
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     gap: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 
 }
 .more a{
-    padding: 10px;
+    padding: 24px;
     text-decoration: none;
     color: rgb(17, 17, 58);
     border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
 }
-.red{
-    background: red;
+.more a:hover,
+.more a.red{
+    background-color: red;
     color: white;
 }
