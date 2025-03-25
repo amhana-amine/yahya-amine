@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: red;
+    gap: 10vw;
+}
+
+.logo{
+    color: rgb(45, 45, 71);
+}
+
+.links {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(45, 45, 71);
+}
+
+#red{
+    color: red;
+}
+
