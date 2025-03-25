@@ -9,17 +9,31 @@ nav{
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background-color: red;
-    gap: 10vw;
+    /* background-color: red; */
+    padding-inline: 24vw;
+    gap: 5vw;
+    
+    
+    
+   
+    
 }
 
-.logo{
-    color: rgb(45, 45, 71);
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
 }
 
 .links {
     display: flex;
-    gap: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    
+    
 }
 
 .links a{
@@ -30,4 +44,15 @@ nav{
 #red{
     color: red;
 }
-
+nav div .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    padding: 5px 20px;
+    color: red;
+    background-color: white;
+    border: none;
+   
+}
