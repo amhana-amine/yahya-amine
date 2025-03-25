@@ -4,30 +4,104 @@
     box-sizing: border-box;
 }
 
-nav{
+/******** header-section*********/
+
+nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 10vh;
-    background-color: red;
-    gap: 10vw;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
 }
 
-.logo{
-    color: rgb(45, 45, 71);
+.text {
+    position: relative;
+    letter-spacing: 1.2px;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 16px;
+    /* right: 90px; */
+    width: 40%;
+    height: 4px;
+    background-color: red;
 }
 
 .links {
     display: flex;
-    gap: 1.5vw;
+    gap: 30px;
 }
 
-.links a{
+.links a {
     text-decoration: none;
-    color: rgb(45, 45, 71);
+    color: rgb(17, 17, 58);
+    font-weight: 600;
+    letter-spacing: 1.1px;
 }
 
-#red{
+.btn {
+    padding: 15px 22px;
+    background-color: beige;
+    border: none;
+    color: red;
+
+}
+
+.links a:hover,
+.links a.active {
     color: red;
 }
 
+/***********section-1  ***********/
+.content {
+    padding: 33px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.description {
+    width: 50%;
+    
+
+}
+
+.description h1 {
+    font-size: 80px;
+    color: rgb(17, 17, 58);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.description p{
+    color: rgba(20, 15, 15, 0.384);
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.picture {
+    width: 50%;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+
+}
+.more a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(17, 17, 58);
+    border-radius: 50px;
+}
+.red{
+    background: red;
+    color: white;
+}
