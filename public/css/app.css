@@ -2,53 +2,439 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: mine;
 }
+@font-face {
+    font-family: mine;
+    src: url('../fonts/Bai_Jamjuree/BaiJamjuree-Medium.ttf');
+}
+
 /******** header-section*********/
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 200px ;
+    padding: 20px 60px;
     background-color: transparent;
-    border-bottom: 1px solid gray;
 }
-.text{
+
+.text {
     position: relative;
     letter-spacing: 1.2px;
 }
 
 .text::after {
     content: "";
-    position: absolute;  
+    position: absolute;
     bottom: -10px;
     left: 16px;
-    /* right: 90px; */
     width: 40%;
     height: 4px;
     background-color: red;
 }
-.links{
+
+.links {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
-.links a{
+
+
+.links a {
     text-decoration: none;
     color: rgb(17, 17, 58);
     font-weight: 600;
     letter-spacing: 1.1px;
 }
-.btn{
+
+.btn {
     padding: 15px 22px;
     background-color: beige;
     border: none;
     color: red;
 
+        margin-left: 280px;
+        
+    }
+    #mobile,
+.lbl {
+    display: none;
 }
-.links a:hover,.links a.active{
+
+.lbl {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+
+
+.links a:hover,
+.links a.active {
     color: red;
 }
+.mobile-menu{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    flex: 2;
+  
+}
 /***********section-1  ***********/
+section{
+    padding: 20px 100px 0 60px;
+}
+.firstSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+}
 
+.picture {
+    width: 50%;
+}
+.picture img{
+    width: 600px;
+}
+.description h1 {
+    font-size: 60px;
+    color: rgb(17, 17, 58);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.description p{
+    color: rgba(20, 15, 15, 0.384);
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    line-height: 1.3;
+    text-align: justify;
+}
+.more{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.more a{
+    padding: 24px;
+    text-decoration: none;
+    color: rgb(17, 17, 58);
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.more a:hover,
+.more a.red{
+    background-color: red;
+    color: white;
+}
+/********section-2**********/
+.description h2 {
+    font-size: 40px;
+    color: rgb(17, 17, 58);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.cards{
+    margin-top: 90px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.card{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 280px;
+    text-transform: capitalize;
+    padding:  10px;
+    border: 1px solid rgb(205, 205, 214);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.icon i{
+    font-size: 40px;
+    
+}
+/******section3*******/
+.contactSection{
+    display: flex;
+   
+    flex-direction: column;
+    gap: 20px;
+}
+.contact1{
+    display: flex;
+    gap: 8px;
+}
+.contact1 input{
+    width: 50%;
+    height: 40px;
+    padding: 0 12px;
+}
+.contact2{
+    width: 100%;
+}
+.contact2 textarea{
+    width: 100%;
+    padding: 20px;
+}
+.btn-send{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 22px;
+}
+.send{
+    padding: 24px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    background: red;
+}
+/******* footer ******/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: blue;
+    text-align: center;
+}
+footer h2{
+    color: white;
+    text-transform: uppercase;
+}
+footer p{
+    color: brown;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+footer .links a{
+    color: white;
+}
+footer h6{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1.8px;
+}
+@media (max-width:767px){
+    .mobile-menu div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0px;
+        
+    }
+    .lbl {
+        display: block;
 
+    }
+    .mobile-menu{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #e6dcdc;
+        transition: 1s ease;
+        padding: 0 0 0 20px;
+        padding: 22px;
 
+    }
+    
+    #mobile:checked~.mobile-menu {
+        left: 0;
+    }
+    
+    .logo{
+        flex: 1;
+        text-align: center;
+    }
+    .links{
+        flex-direction: column;
+    
+    }
+    .text {
+        position: relative;
+        letter-spacing: 1.2px;
+    }
+    
+    .text::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 46%;
+        width: 7%;
+        height: 4px;
+        background-color: red;
+    }
+    /****section1  *****/
+    section{
+    padding: 20px 100px 0 60px;
+}
+.firstSection{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;     */
+    flex-direction: column;
+    gap: 40px;
+}
+
+.picture {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture img{
+    width: 700px;
+}
+.description h1 {
+    /* font-size: 60px;
+    color: rgb(17, 17, 58);
+    padding-bottom: 10px;
+    text-transform: capitalize; */
+    text-align: left;
+}
+.description p{
+    color: rgba(20, 15, 15, 0.384);
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    line-height: 1.3;
+    text-align: justify;
+}
+.more{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.more a{
+    padding: 24px;
+    text-decoration: none;
+    color: rgb(17, 17, 58);
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.more a:hover,
+.more a.red{
+    background-color: red;
+    color: white;
+}
+/********section-2**********/
+.description h2 {
+    font-size: 40px;
+    color: rgb(17, 17, 58);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.cards{
+    /* width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; */
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.card{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    text-transform: capitalize;
+    padding:  10px;
+    border: 1px solid rgb(205, 205, 214);
+}
+.icon i{
+    font-size: 40px;
+    
+}
+/******section3*******/
+.contactSection{
+    display: flex;
+   
+    flex-direction: column;
+    gap: 20px;
+}
+.contact1{
+    display: flex;
+    gap: 8px;
+}
+.contact1 input{
+    width: 50%;
+    height: 40px;
+    padding: 0 12px;
+}
+.contact2{
+    width: 100%;
+}
+.contact2 textarea{
+    width: 100%;
+    padding: 20px;
+}
+.btn-send{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 22px;
+}
+.send{
+    padding: 24px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    background: red;
+}
+/******* footer ******/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: blue;
+    text-align: center;
+}
+footer h2{
+    color: white;
+    text-transform: uppercase;
+}
+footer p{
+    color: brown;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+footer .links a{
+    color: white;
+}
+footer h6{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1.8px;
+}
+}
