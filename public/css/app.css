@@ -378,8 +378,8 @@ footer h6{
    gap: 20px;
 }
 .contact1{
-    display: flex;
-    gap: 8px;
+   display: flex;
+   gap: 8px;
 }
 .contact1 input{
     width: 50%;
