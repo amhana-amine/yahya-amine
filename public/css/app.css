@@ -373,10 +373,9 @@ footer h6{
 }
 /******section3*******/
 .contactSection{
-    display: flex;
-   
-    flex-direction: column;
-    gap: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 .contact1{
     display: flex;
